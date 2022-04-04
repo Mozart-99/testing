@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul:first-of-type + li{
+            color:red;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .div{
+            margin: 20px 0px;
+            height: 200px;
+            border: 3px solid red;
+            border-radius:20px;
+            background-color: aqua;
+        }
+        .demo {
+            overflow : hidden;
+            background-color : rgb(255, 0, 149);
+            position:sticky;
+            top:0;
+        }
+        .demo a {
+            padding:14px 20px;
+            color: white;
+            display:block;
+            text-decoration:none;
+            float: left;
+            text-align: center;
+        }
+        .demo a:hover{
+            background-color : rgba(255, 0, 98, 0.589);
+            color: rgb(68, 0, 6);
+        }
+        input[type="text"]:focus {
+    
+        width: 150px;
+        /*display: flex;*/
+        margin-bottom: 10px;
+        background-color: lightblue;
+}
+label{
+    color:rgb(250, 136, 7);
+   
+    text-shadow:10px 10px 5px black;
+}
+select{
+    margin:30px 0px;
+}
+#img1 {
+    height:auto;
+    max-width:70%;
+    margin: auto;
+
+}
+body{
+    background-image:url(tree.jpg);
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+ 
+}
+
+    </style>
+</head>
+<body>
+    <div class = "demo">
+        <a href = "#">Home</a>
+        <a href = "#">About</a>
+        <a href = "#">Tutorials</a>
+        <a href = "#">QA</a>
+        <a href = "#">Videos</a>
+        <a href = "#">Contact</a>
+    </div>
+    <label for="langage">Sélectionner un langage de programmation:</label>
+    <select name="lg" id="langage">
+    <option value="">--Choisir -</option>
+    <option value="Python">Python</option>
+    <option value="CSharp">C#</option>
+    <option value="java">java</option>
+    </select>
+
+<div>
+<div class="div">1</div>
+<div class="div">2</div>
+<div class="div">3</div>
+<div class="div">4</div>
+</div>
+</body>
+</html>
